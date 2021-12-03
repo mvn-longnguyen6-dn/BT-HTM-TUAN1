@@ -4,153 +4,269 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bài Tập HTML Tuần 1</title>
-    <style>
-      td,
-      th {
-        border: 1px solid #252525;
-        text-align: left;
-        padding: 8px;
-       
-      }
-      header {background-color: aqua;}
-      footer {background-color:cadetblue}
-      nav{background-color:chartreuse}
-      article {background-color: red}
-      section {background-color: rebeccapurple}
-    </style>
+    <title>Nguyễn Huỳnh Phi Long</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <h1>This is a Heading h1</h1>
-      <h2>This is a Heading h2</h2>
-      <h3>This is a Heading h3</h3>
-      <h4>This is a Heading h4</h4>
-      <h5>This is a Heading h5</h5>
-      <h6>This is a Heading h6</h6>
-    </header>    
-      <p>
-        This is a p
-        <span style="color: blue; font-weight: bold"
-          >Thẻ 'span' được dùng để nhóm các phần tử nội tuyến lại với nhau, tiện
-          cho việc định dạng CSS.</span
-        >
-        Thẻ br dùng để xuống dòng <br />
-        <span style="color: red; font-weight: bold"
-          >Thẻ 'hr' dùng để tạo một đường kẻ phân cách nằm ngang</span
-        >
-      </p>
-      <hr />
-      <p><strong>This text is important!</strong></p>
-      <nav>
-        <h1>The ul element</h1>
-        <ul>
-          <li>Coffee</li>
-          <li>Tea</li>
-          <li>Milk</li>
-        </ul>
-
-        <h1>The ol element</h1>
-        <ol>
-          <li>Coffee</li>
-          <li>Tea</li>
-          <li>Milk</li>
-        </ol>
-      </nav>
-    </header>
-    <main>
-      <form action="/action_page.php" method="get">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" /><br /><br />
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname" /><br /><br />
-        <label for="gender">Choose a giơi tính:</label>
-        <select name="gender" id="gender">
-          <option value="name">Name</option>
-          <option value="Nữ">Nữ</option></select
-        ><br />
-        <textarea>Xin mời nhập vào </textarea><br />
-        <input type="submit" value="Submit" />
-      </form>
-
-      <div
-        style="
-          border: 5px outset red;
-          background-color: rgb(152, 223, 247);
-          text-align: center;
-        "
-      >
-        <h2>This is a heading in a div element</h2>
-        <a href="#">This is a tag 'a' </a>
-        <br />
-        <i>This is a tag 'i' </i>
-        <br />
-        <img
-          src="https://monstar-lab.com/vn/wp-content/themes/monstar_lab/public/images/revamp/logo.png"
-          alt="Logo monstar-lab"
-        />
+    <header class="page-header">
+      <div class="container">
+        <div class="row">
+            <div class="header-menu">
+              <ul>
+                  <li><a href="">demo</a></li>
+                  <li><a href="">shop</a></li>
+                  <li><a href="">product</a></li>
+                  <li><a href="">lookbook</a></li>
+                  <li><a href="">blog</a></li>
+              </ul>
+            </div>
+            <div class="logo">
+              <a href="/"><img src="" alt="logo"></a>
+            </div>
+            <div class="header-action">
+                <a href=""><i>icon seach</i></a>
+                <a href=""><i>icon user</i></a>
+                <a href=""><i>icon heath</i></a>
+                <a href=""><i>icon cart</i></a>
+              </div>
+            </div>
+          </div>
       </div>
-   
-        <h3>This is a tag 'iframe'</h3>
-        <iframe
-          width="500"
-          height="300"
-          src="https://www.youtube.com/embed/anYFxQvSqqQ"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-
-
-      <h2>HTML Table</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Month</th>
-            <th>Savings</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>January</td>
-            <td>$100</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td>Sum</td>
-            <td>$180</td>
-          </tr>
-        </tfoot>
-      </table>
-    </main>
-    <aside>
-
-        <h4>Disney in France</h4>
-   
-        <p>Besides Euro Disney, there is a Disneyland in California.</p>
-   
-   </aside>
-   <article>
-<section>
-    <video width="400" controls>
-        <source src="https://webvn.com/wp-content/uploads/2014/12/mov_bbb.mp4" type="video/mp4">
-        <source src="https://webvn.com/wp-content/uploads/2014/12/mov_bbb.ogg" type="video/ogg">
-        Trình duyệt của bạn không hỗ trợ thẻ video trong HTML5.
-        </video>
-
-    </section>
-
-    <article>
-
-        <p>Tôi đi làm vào lúc <time>11:00</time></p>
-
-    </article>
-</section>
-<footer>
-   <p>Địa chỉ công ty  <address>Khu 4 An Hải Bắc</address></p>
-   <p>Gmail <mark> monstar-lab.gmail.com</mark></p>
-</footer>
-  </body>
-</html>
+    </header>    
+     <main class="page-main">
+        <section class="section-banner">
+          <h1>interior decoration</h1>
+        <div style="width:100px">
+        <hr>
+        </div>
+        <h3>looking for furniture for your living rom</h3>
+        <a href="" class="btn btn-primary btn-get-started">
+          shop now 
+            <i class="icon-new">-></i>
+        </a>
+        </section>
+        <section class="section-colection">
+            <div class="container">
+              <div class="light-colect">
+                <h2>lighting colections</h2>
+                <p>explorer <i  >-></i></p>
+              </div>
+              <div class="light-colect">
+                <h2>audio decor</h2>
+                <p>view collection <i  >-></i></p>
+              </div> 
+              <div class="new-arrivals">
+                <h2>audio decor</h2>
+                <p>shop now <i  >-></i></p>
+              </div>
+            </div>
+        </section>
+        <section class="best-selling">
+            <div class="title">
+              <h2>best selling product</h2>
+              <div style="width:100px">
+                <hr>
+              </div>
+                <span>Dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</span>
+            </div>
+            <div class="best-selling-product">
+                <div class="container">
+                    <div class="col-2 ">
+                      <img src="" alt="">
+                      <h3>form egg</h3>
+                      <span>$35.00</span>
+                    </div>
+                    <div class="col-2 ">
+                      <img src="" alt="">
+                      <h3>form egg</h3>
+                      <span>$35.00</span>
+                    </div>
+                    <div class="col-2 ">
+                      <img src="" alt="">
+                      <h3>form egg</h3>
+                      <span>$35.00</span>
+                    </div>
+                    <div class="col-2 ">
+                      <img src="" alt="">
+                      <h3>form egg</h3>
+                      <span>$35.00</span>
+                    </div>
+                    <div class="col-2 ">
+                      <img src="" alt="">
+                      <h3>form egg</h3>
+                      <span>$35.00</span>
+                    </div>
+                    <div class="btn-load">
+                      <a href="">Load More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="last-blog">
+          <div class="title">
+            <h2>latest blog posts</h2>
+            <div style="width:100px">
+              <hr>
+            </div>
+              <span>Dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</span>
+          </div>
+          <div class="blog-product">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <img src="" alt="">
+                  <h3>The Kozmophone Is a Holographic, Bluetooth Turntable</h3>
+                  <span>By admin on February 21, 2020  </span>
+                  <p>Imagine a turntable with a portable and detachable phonograph-style horn speaker and a miniature.</p>
+                </div>
+                <div class="col">
+                  <img src="" alt="">
+                  <h3>The Kozmophone Is a Holographic, Bluetooth Turntable</h3>
+                  <span>By admin on February 21, 2020  </span>
+                  <p>Imagine a turntable with a portable and detachable phonograph-style horn speaker and a miniature.</p>
+                </div>
+                <div class="col">
+                  <img src="" alt="">
+                  <h3>The Kozmophone Is a Holographic, Bluetooth Turntable</h3>
+                  <span>By admin on February 21, 2020  </span>
+                  <p>Imagine a turntable with a portable and detachable phonograph-style horn speaker and a miniature.</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </section>
+        <section class="subscribe">
+          <div class="title">
+            <h2>subscribe our newsletter</h2>
+            <div style="width:100px">
+              <hr>
+            </div>
+              <span>Sign up for our newsletter to be updated on the latest designs, exclusive offers, inspiration and tips!</span>
+          </div>
+          <form class="input-email">
+            <input type="email" placeholder="Your eamil address">
+            <button>subscribe</button>
+          </form>
+        </section>
+        <section class="support">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="icon">
+                  <i clas ='icon-maybay'></i>
+                </div>
+                <div class="support-name">
+                  <h3>Free Shipping</h3>
+                  <span>Free shipping for all US order</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="icon">
+                  <i clas ='icon-phao'></i>
+                </div>
+                <div class="support-name">
+                  <h3>Support 24/7</h3>
+                  <span>we support 24 hours a day</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="icon">
+                  <i clas ='icon-refersh'></i>
+                </div>
+                <div class="support-name">
+                  <h3>30 days return</h3>
+                  <span>you have 30 days to return</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="icon">
+                  <i clas ='icon-sucurity'></i>
+                </div>
+                <div class="support-name">
+                  <h3>Payment 100% Secure</h3>
+                  <span>Payment 100% Secure</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main> 
+      <footer class="page-footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <a href="/"  alt="">Logo</a>
+                <div class="info">
+                  <i></i>
+                  <p>184 Main Rd E, St Albans
+                    VIC 3021, Australia</p>
+                </div>
+                <div class="info">
+                  <i></i>
+                  <p> contact@company.com</p>
+                </div>
+                <div class="info">
+                  <i></i>
+                  <p>+001 2233 456</p>
+                </div>
+                <ul class="social">
+                  <li><a href=""><i></i></a></li>
+                  <li><a href=""><i></i></a></li>
+                  <li><a href=""><i></i></a></li>
+                  <li><a href=""><i></i></a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3>Categories</h3>
+                <ul>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">About Us</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3>Infomation</h3>
+                <ul>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">About Us</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3>Useful links</h3>
+                <ul>
+                  <li><a href=""><i></i> support@appie.com</a></li>
+                  <li><a href=""><i></i> support@appie.com</a></li>
+                  <li><a href=""><i></i> support@appie.com</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3>Quick links</h3>
+                <ul>
+                  <li><a href=""><i></i> support@appie.com</a></li>
+                  <li><a href=""><i></i> support@appie.com</a></li>
+                  <li><a href=""><i></i> support@appie.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <ul class="flatform">
+              <li><a href="" class="btn btn-white">Shop </a></li>
+              <li><a href="" class="btn btn-white">About Us</a></li>
+              <li><a href="" class="btn btn-white">Contract</a></li>
+              <li><a href="" class="btn btn-white">Blog</a></li>
+            </ul>
+            <p class="copyright">Copyright © 2021 Kalles all rights reserved. Powered by The4</p>
+          </div>
+        </div>
+      </footer>
+    </body>
+    </html>
